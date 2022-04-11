@@ -22,7 +22,7 @@ pipeline {
         }
     }
 post {
-    Success {
+    success {
         mail to: 'Jeya.S@zifornd.com',
              subject: "Success Pipeline: ${currentBuild.fullDisplayName}",
              body: "Something is wrong with ${env.BUILD_URL}"
